@@ -80,7 +80,7 @@ public class GeminiService {
         Path tempFilePath = Paths.get(uploadDir, fileName);
         Files.copy(image.getInputStream(), tempFilePath, StandardCopyOption.REPLACE_EXISTING);
 
-        byte[] sampleImageBytes = Files.readAllBytes(Paths.get("src/main/resources/static/sample.png"));
+        // byte[] sampleImageBytes = Files.readAllBytes(Paths.get("src/main/resources/static/sample.png"));
         byte[] imageBytes = image.getBytes();
         String mimeType = image.getContentType() != null ? image.getContentType() : "image/png";
         System.out.println("<<<<<<<<<>>>>>>>>>>>>>>");
