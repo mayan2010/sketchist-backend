@@ -37,7 +37,9 @@ public class GeminiService {
             + " The block pattern is a repetitive pattern that is present on the suit."
             // + "Use the sample named Sample.png provided to understand the style of the sketch template. Do not incorporate the given sketch in the design "
             + " Don't over do the sketch, just give the basic outline of the suit"
-            + " I will be giving you an image. You have to identify the textile suit in the image, extract it and convert it to a single symmeterical stencil template of aspect ratio 3:5 following the same style as I described.";
+            + " I will be giving you an image. You have to identify the textile suit in the image, extract it and convert it to a single symmeterical stencil template of aspect ratio 3:5 following the same style as I describe."
+            + "The border acts as the frame of the image. While top left and right border are always uniform, the bottom border may not mandatory be slightly be different"
+            +"The neck is at the top of the image. The block pattern, if present, is spread throughout the middle of the image.";
 
     /**
      * Tries to delete a file immediately. If deletion fails, schedules
